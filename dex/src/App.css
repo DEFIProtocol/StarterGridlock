@@ -23,18 +23,29 @@ header {
   padding-right: 10px;
 
 }
-
+.header-page{
+  width: 80%;
+}
 .leftH {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+}
+
+.gridLock{
+  font-size: 1.5em;
+  background-color: lime;
+  background-image: linear-gradient(90deg, white, lime);
+  background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 .rightH {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
+  align-items: flex-end;
 }
 
 .headerItem {
@@ -73,6 +84,29 @@ header {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+.header-items-container{
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.header-items-container2{
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+  margin-left: 5vw;
+}
+.active-menu{
+  float: left;
+}
+
+@media screen and (max-width:760px){
+  .header-items-container{
+      flex-direction: column;
+      margin-top: 20%;
+      z-index: 1;
+      background-color: #202020;
+  }
 }
 
 .link {
